@@ -29,7 +29,7 @@ function App(){
   const fetchTodos = async (title) => {
     const response = await axios.get(`${API_URL}&s=${title}`);
     setMovies(response.data.Search);
-    console.log(response.data.Search)
+    console.log(response.data.Search);
   };
 
   useEffect(() => {
